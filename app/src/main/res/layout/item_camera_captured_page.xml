@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="54dp"
+    android:layout_height="72dp"
+    android:layout_marginEnd="10dp">
+
+    <!-- Thumbnail Image -->
+    <ImageView
+        android:id="@+id/iv_captured_thumb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1E293B"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/ic_photo_library" />
+
+    <!-- Thin Border -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_action_card"
+        android:backgroundTint="#00000000" />
+
+    <!-- Page Number Badge (Bottom Left) -->
+    <TextView
+        android:id="@+id/tv_page_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="3dp"
+        android:background="#B3000000"
+        android:paddingHorizontal="4dp"
+        android:paddingVertical="1dp"
+        android:textColor="#FFFFFF"
+        android:textSize="9sp"
+        android:textStyle="bold"
+        tools:text="1" />
+
+    <!-- Delete Button (Top Right) -->
+    <ImageView
+        android:id="@+id/btn_delete_captured"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="top|end"
+        android:background="#CCDC2626"
+        android:contentDescription="@string/delete"
+        android:padding="3dp"
+        android:src="@drawable/ic_close" />
+
+</FrameLayout>

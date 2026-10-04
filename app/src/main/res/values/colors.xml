@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Neutral & Accents -->
+    <color name="primary">#1E293B</color>
+    <color name="primary_dark">#0F172A</color>
+    <color name="accent_blue">#2563EB</color>
+    <color name="accent_blue_light">#EFF6FF</color>
+
+    <!-- Surfaces & Backgrounds -->
+    <color name="background_light">#F8FAFC</color>
+    <color name="surface_card">#FFFFFF</color>
+    <color name="surface_card_selected">#F1F5F9</color>
+
+    <!-- Typography -->
+    <color name="text_primary">#0F172A</color>
+    <color name="text_secondary">#64748B</color>
+    <color name="text_muted">#94A3B8</color>
+    <color name="text_white">#FFFFFF</color>
+
+    <!-- Dividers & Borders -->
+    <color name="border_light">#E2E8F0</color>
+    <color name="divider_subtle">#F1F5F9</color>
+
+    <!-- Utility & Feedback -->
+    <color name="status_success">#059669</color>
+    <color name="status_success_light">#ECFDF5</color>
+    <color name="status_danger">#DC2626</color>
+    <color name="status_danger_light">#FEF2F2</color>
+
+    <!-- Camera Overlay -->
+    <color name="camera_overlay">#66000000</color>
+    <color name="shutter_button">#FFFFFF</color>
+    <color name="shutter_ring">#CBD5E1</color>
+</resources>

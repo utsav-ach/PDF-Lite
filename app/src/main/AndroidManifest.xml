@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Camera permission for Quick Scan -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_pdf_file"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_pdf_file"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PDFMaker"
+        tools:targetApi="34">
+
+        <!-- Main Home Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Quick Scan Camera Activity -->
+        <activity
+            android:name=".CameraActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PDFMaker.Camera"
+            tools:ignore="LockedOrientationActivity" />
+
+        <!-- Photos to PDF Activity -->
+        <activity
+            android:name=".PhotoPickerActivity"
+            android:exported="false" />
+
+        <!-- PDF Page Extraction Activity -->
+        <activity
+            android:name=".PdfPageSelectionActivity"
+            android:exported="false" />
+
+        <!-- Preview & Share Activity -->
+        <activity
+            android:name=".PreviewActivity"
+            android:exported="false" />
+
+        <!-- FileProvider for Secure Native Document Sharing -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.pdfmaker.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

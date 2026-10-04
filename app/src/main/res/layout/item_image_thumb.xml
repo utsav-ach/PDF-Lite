@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/bg_action_card"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <!-- Thumbnail Preview -->
+    <ImageView
+        android:id="@+id/iv_thumb"
+        android:layout_width="56dp"
+        android:layout_height="72dp"
+        android:background="@color/border_light"
+        android:scaleType="centerCrop"
+        android:contentDescription="Photo Thumbnail"
+        tools:src="@drawable/ic_photo_library" />
+
+    <!-- Info: Page Number and Image Details -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_page_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:text="Page 1" />
+
+        <TextView
+            android:id="@+id/tv_image_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            tools:text="IMG_1024.jpg" />
+
+    </LinearLayout>
+
+    <!-- Controls: Move Up -->
+    <ImageButton
+        android:id="@+id/btn_move_up"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Move Up"
+        android:padding="6dp"
+        android:src="@drawable/ic_arrow_up"
+        app:tint="@color/text_secondary" />
+
+    <!-- Controls: Move Down -->
+    <ImageButton
+        android:id="@+id/btn_move_down"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Move Down"
+        android:padding="6dp"
+        android:src="@drawable/ic_arrow_down"
+        app:tint="@color/text_secondary" />
+
+    <!-- Controls: Remove -->
+    <ImageButton
+        android:id="@+id/btn_remove_photo"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="4dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/delete"
+        android:padding="6dp"
+        android:src="@drawable/ic_close"
+        app:tint="@color/status_danger" />
+
+</LinearLayout>

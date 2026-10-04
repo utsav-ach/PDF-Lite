@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PDF Maker</string>
+    <string name="tagline">Create a PDF from anything.</string>
+
+    <!-- Actions -->
+    <string name="action_scan_doc">Scan Document</string>
+    <string name="action_scan_doc_sub">Capture pages with camera</string>
+
+    <string name="action_photos_pdf">Photos to PDF</string>
+    <string name="action_photos_pdf_sub">Convert images &amp; screenshots</string>
+
+    <string name="action_extract_pages">Extract Pages</string>
+    <string name="action_extract_pages_sub">Select pages from existing PDF</string>
+
+    <!-- Recent Section -->
+    <string name="section_recent">Recent Documents</string>
+    <string name="recent_empty">No documents yet.\nTap an action above to create your first PDF.</string>
+
+    <!-- Camera / Scan -->
+    <string name="scan_title">Scan Document</string>
+    <string name="scan_done">Done</string>
+    <string name="scan_add_page">Add Page</string>
+    <string name="scan_pages_captured">pages captured</string>
+    <string name="camera_permission_required">Camera permission is required to scan documents.</string>
+    <string name="grant_permission">Grant Permission</string>
+
+    <!-- Photos to PDF -->
+    <string name="photos_to_pdf_title">Photos to PDF</string>
+    <string name="add_more_photos">+ Add Photos</string>
+    <string name="no_photos_selected">No photos selected yet.</string>
+    <string name="create_pdf">Create PDF</string>
+    <string name="reorder_hint">Drag or tap arrows to reorder pages</string>
+
+    <!-- Page Extraction -->
+    <string name="extract_pages_title">Extract Pages</string>
+    <string name="select_all">Select All</string>
+    <string name="clear_selection">Clear</string>
+    <string name="pages_selected_count">%1$d of %2$d selected</string>
+    <string name="no_pdf_loaded">Select a PDF file to begin.</string>
+    <string name="loading_pdf_pages">Reading PDF pages…</string>
+
+    <!-- Result / Share Screen -->
+    <string name="pdf_created_title">PDF Created</string>
+    <string name="open_pdf">Open PDF</string>
+    <string name="share_pdf">Share</string>
+    <string name="done">Done</string>
+    <string name="share_via">Share PDF via</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_enter_filename">Document Name</string>
+    <string name="filename_hint">e.g. Citizenship</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="delete_confirm_title">Delete Document?</string>
+    <string name="delete_confirm_msg">This will permanently delete %1$s from your device.</string>
+    <string name="creating_pdf_progress">Generating PDF…</string>
+    <string name="error_creating_pdf">Failed to create PDF. Please try again.</string>
+    <string name="error_opening_pdf">No app found to open PDF files.</string>
+</resources>

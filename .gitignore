@@ -1,0 +1,28 @@
+# Android Studio / IntelliJ
+.idea/
+*.iml
+
+# Gradle
+.gradle/
+
+# Local configuration
+local.properties
+
+# Build files
+build/
+*/build/
+
+# Generated files
+.cxx/
+.externalNativeBuild/
+
+# Captures
+captures/
+
+# APK/AAB
+*.apk
+*.aab
+
+# OS files
+.DS_Store
+Thumbs.db
